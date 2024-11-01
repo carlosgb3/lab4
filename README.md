@@ -2,7 +2,7 @@
 Se requiere hacer la recreación del siguiente diagrama en AWS con Terraform. El diagrama es intencionadamente impreciso para dejar abierta las soluciones según los criterios del AWS Well-Architected
 
 <p align="center">
-<img src="https://github.com/carlosgb3/lab4/blob/main/diagrama.png">
+<img src="https://github.com/carlosgb3/lab4/blob/main/img/diagrama.png">
 </p>
 
 ## Requisitos
