@@ -5,6 +5,7 @@ terraform {
       version = "5.0"
     }
   }
+  /*
   backend "s3" {
     bucket         = "carlosgb-s3-terraform"
     key            = "terraform/terraform.fstate"
@@ -12,11 +13,14 @@ terraform {
     dynamodb_table = "carlosgb-lab04-lock"
     encrypt        = true
   }
+  */
 }
 
 
 /*
-    EXPORTAR LOS LOGS
+    EL BAKCEND DE S3 SE QUEDA DESACITIVADO
+    Y LOCK DE DYNAMO DB PARA LANZAR EN LOCAL
+    ----EXPORTAR LOS LOGS---
 */
 
 ### CREAMOS UNA POLICY Y UN ROL PARA SSM Y SE LA ATACHAMOS ###
