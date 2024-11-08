@@ -119,8 +119,7 @@ resource "aws_route53_record" "alb_record" {
 
 ### CREAMOS CON SECRETS MANAGER EL REGISTRO DEL PASS DE LA DB  ###
 resource "aws_secretsmanager_secret" "db_password" {
-  //name = "wordpress/db_password-01"
-  name = "contrasena-wordpress-02"
+  name = "wordpress-db-password-04"
 }
 
 resource "aws_secretsmanager_secret_version" "db_password_version" {
