@@ -23,3 +23,13 @@ Se requiere hacer la recreación del siguiente diagrama en AWS con Terraform. El
 * Se propone guardar copias de seguridad en otro VPC e interconectarlos con VPCpeering
 * Se propone crear un dashboard de CloudWatch donde se vean las principales métricas relevantes (uptime, rendimiento, etc)
 
+
+# Solución
+Route53 nos permite hacer el enrutamiento interno por DNS. El Nat gateway permite a las instancias salir a internet. El AutoScaling Group lanza las instancias adecuando la cantidad 
+al tráfico existente y el Balanceador de carga distribuye el trafico entre ellas. El EFS nos permite tener un almacenamiento persitente y autoescalable para compartir entre las instancias
+La BBDD es una multi AZ garantizando la H.A. La Memcache cachea las sesiones de usuario y la Redis cachea la BBDD. Por último el bucket de S3 nos permite tener las imagenes almacenadas y 
+cacheadas con cluudfront.
+<p align="center">
+<img src="https://github.com/carlosgb3/lab4/blob/main/img/diagrama-solucion-lab4.png">
+</p>
+
